@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300sp"
+    android:layout_height="450sp"
+    android:textAlignment="center">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_mind_logo_round" />
+
+    <TextView
+        android:id="@+id/lblAboutMindDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=" We're Mind, the mental health charity. \nWe won't give up until everyone experiencing a mental health problem gets both support and respect.\nWe have two phone lines that are active 24/7.\n The Mind Infoline\n0300 123 3393\nand\nThe Legal Line\n0300 466 6463"
+        android:textAlignment="center"
+        android:textAppearance="@style/MyTextHeading"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

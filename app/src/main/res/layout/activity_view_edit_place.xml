@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.ViewEditPlaceActivity">
+
+    <ImageView
+        android:id="@+id/imgViewEditPlacePhoto"
+        android:layout_width="337dp"
+        android:layout_height="297dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+    <Button
+        android:id="@+id/cmdViewEditPlaceChangePhoto"
+        style="@style/MyDialogButton"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:text="Change Place Photo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewEditPlacePhoto"
+        app:layout_constraintStart_toStartOf="@+id/imgViewEditPlacePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewEditPlacePhoto" />
+
+    <EditText
+        android:id="@+id/txtViewEditPlaceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Place Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewEditPlacePhoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgViewEditPlacePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/cmdViewEditPlaceChangePhoto" />
+
+    <EditText
+        android:id="@+id/txtViewEditPlaceDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/cmdViewEditPlaceRemove"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewEditPlaceName"
+        app:layout_constraintStart_toStartOf="@+id/txtViewEditPlaceName"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewEditPlaceName" />
+
+    <Button
+        android:id="@+id/cmdViewEditPlaceSave"
+        style="@style/MyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Save Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewEditPlaceName"
+        app:layout_constraintStart_toStartOf="@+id/txtViewEditPlaceName" />
+
+    <Button
+        android:id="@+id/cmdViewEditPlaceRemove"
+        style="@style/MyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Remove"
+        app:layout_constraintBottom_toTopOf="@+id/cmdViewEditPlaceSave"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewEditPlaceName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtViewEditPlaceName"
+        android:background="@color/colorRed"/>
+
+    <ProgressBar
+        android:id="@+id/pbViewEditPlace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

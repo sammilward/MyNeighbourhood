@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.login.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/pbRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterTitle"
+        android:layout_width="130dp"
+        android:layout_height="132dp"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="10000dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/imgRegisterProfilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_temporary_minimal_profile_picture"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/cmdRegisterChangeProfilePicture"
+        style="@style/MyDialogButton"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:text="@string/change_profile_picture"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterReEnterPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterReEnterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <EditText
+        android:id="@+id/txtRegisterName"
+        style="@style/MyEditTexts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="Name"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cmdRegisterChangeProfilePicture" />
+
+    <EditText
+        android:id="@+id/txtRegisterEmail"
+        style="@style/MyEditTexts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="@string/prompt_email"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtRegisterName" />
+
+    <EditText
+        android:id="@+id/txtRegisterPassword"
+        style="@style/MyEditTexts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/prompt_password"
+        android:hint="@string/prompt_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterEmail" />
+
+    <EditText
+        android:id="@+id/txtRegisterReEnterPassword"
+        style="@style/MyEditTexts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/prompt_password"
+        android:hint="@string/re_enter_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterPassword" />
+
+    <EditText
+        android:id="@+id/txtRegisterPostcode"
+        style="@style/MyEditTexts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="Postcode"
+        android:hint="Postcode"
+        android:inputType="textPostalAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtRegisterReEnterPassword" />
+
+    <Button
+        android:id="@+id/cmdRegister"
+        style="@style/MyButton"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:text="@string/action_register"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterReEnterPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterReEnterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterPostcode" />
+
+    <TextView
+        android:id="@+id/txtRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/action_register"
+        android:textAppearance="@style/MyTextTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

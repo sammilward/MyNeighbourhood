@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1067788137637",
+    "firebase_url": "https://quantum-tracker-256011.firebaseio.com",
+    "project_id": "quantum-tracker-256011",
+    "storage_bucket": "quantum-tracker-256011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067788137637:android:d3dad7994e68c59d1bc94c",
+        "android_client_info": {
+          "package_name": "com.sammilward.neighbourhood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067788137637-qr921cj1p6s44ngg27hpc47987qg1dkl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sammilward.neighbourhood",
+            "certificate_hash": "bd286e2429d88f88cfa9d6fde8130a2395896c84"
+          }
+        },
+        {
+          "client_id": "1067788137637-ln6vlh159okispdmjfptjisofcc35g2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLPySLJ2joiDUBUXt5ew6XRaBDxnmv5oA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067788137637-ln6vlh159okispdmjfptjisofcc35g2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
